@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css or src/App.css */
+
+
+
+.herosection_bg{
+    background-image: url('./assets/Images/Hero-section-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.tryour_bg{
+    background-image: url('./assets/Images/Tryour-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.about_hero{
+  background-image: url('./assets//Images//About-hero-section-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
+}
+.nunito{
+    font-family: "Nunito", sans-serif;
+}
+.asap{
+    font-family: "Asap", sans-serif;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.plus-jakarta-sans{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
+.active{
+    color: #DF5759;
+}
+
+
+
+ .sign_btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #DF5759;
+   
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .sign_btn:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #014579;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  
+  .sign_btn:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    color: #fff;
+  }
+  
+  .sign_btn span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sign_btn:hover span {
+    color:#ffffff;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
